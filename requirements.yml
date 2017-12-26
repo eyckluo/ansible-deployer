@@ -1,0 +1,4 @@
+---
+- src: https://github.com/eyckluo/ansible-gitlab.git
+  version: master
+  name: gitlab 

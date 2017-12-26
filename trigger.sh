@@ -44,4 +44,9 @@ echo "application: $application"
 echo "inventory: $inventory"
 echo "version: $version"
 
+# ansible-galaxy install -f -r requirements.yml -p roles
+
 ansible-playbook -e host_key_checking=False -e application=$application -e version=$version -i $inventory $action.yml
+
+# clean up
+rm -rf $action.retry

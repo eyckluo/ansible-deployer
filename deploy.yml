@@ -3,4 +3,6 @@
   remote_user: devtoolsuat
   tasks:
     - action: ping
+    - include_role:
+        name: gitlab
       
